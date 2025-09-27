@@ -52,6 +52,11 @@ export const chatWithLoveApp = (message, chatId) => {
   return connectSSE('/ai/love_app/chat/sse', { message, chatId })
 }
 
+// AI恋爱大师RAG版本聊天
+export const chatWithLoveAppRAG = (message, chatId) => {
+  return connectSSE('/ai/love_app/chat/sse2', { message, chatId })
+}
+
 // AI超级智能体聊天
 export const chatWithManus = (message) => {
   return connectSSE('/ai/manus/chat', { message })
@@ -59,5 +64,6 @@ export const chatWithManus = (message) => {
 
 export default {
   chatWithLoveApp,
+  chatWithLoveAppRAG,
   chatWithManus
 }

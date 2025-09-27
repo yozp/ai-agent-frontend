@@ -31,6 +31,19 @@
         </div>
       </div>
 
+      <div class="app-card" @click="navigateTo('/love-master-rag')">
+        <div class="card-glow"></div>
+        <div class="app-icon love-rag-icon">💚</div>
+        <div class="app-info">
+          <div class="app-title">AI 恋爱大师(RAG)</div>
+          <div class="app-desc">基于知识库的专业情感顾问，提供更精准建议</div>
+        </div>
+        <div class="app-button">
+          <span class="btn-text">立即体验</span>
+          <span class="btn-icon">→</span>
+        </div>
+      </div>
+
       <div class="app-card" @click="navigateTo('/super-agent')">
         <div class="card-glow"></div>
         <div class="app-icon robot-icon">🤖</div>
@@ -283,6 +296,11 @@ const navigateTo = (path) => {
 .robot-icon {
   background: linear-gradient(135deg, #00b2ff, #4f56ff);
   box-shadow: 0 0 20px rgba(0, 178, 255, 0.5);
+}
+
+.love-rag-icon {
+  background: linear-gradient(135deg, #52c41a, #73d13d);
+  box-shadow: 0 0 20px rgba(82, 196, 26, 0.5);
 }
 
 .app-info {

@@ -20,6 +20,15 @@ const routes = [
     }
   },
   {
+    path: '/love-master-rag',
+    name: 'LoveMasterWithRag',
+    component: () => import('../views/LoveMasterWithRag.vue'),
+    meta: {
+      title: 'AI 恋爱大师(RAG) - AI-SIAT 智能体应用平台',
+      description: 'AI 恋爱大师(RAG)是AI-SIAT 智能体应用平台的专业情感顾问，基于知识库为您提供更准确的情感建议和解答'
+    }
+  },
+  {
     path: '/super-agent',
     name: 'SuperAgent',
     component: () => import('../views/SuperAgent.vue'),
